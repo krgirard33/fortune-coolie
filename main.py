@@ -23,10 +23,11 @@ def getRandomFortune():
         'I see much code in your future',
         'Consider eating more fortune cookies',
         "You have tamed the mighty Python, now you must free it onto the Great Spider's Web!",
+        "May the web apps be ever in your favor"
     ]
 
     # randomly select one of the fortunes
-    index = random.randint(0, 2)
+    index = random.randint(0, len(fortunes)-1)
 
     return fortunes[index]
 
